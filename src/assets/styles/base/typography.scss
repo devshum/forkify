@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as styles;
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: styles.$color-grey-dark-1;
+  background-image: styles.$gradient;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 2 * 4vw);
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: styles.$color-primary;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}

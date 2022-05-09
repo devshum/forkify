@@ -1,0 +1,6 @@
+@use '../abstracts/variables' as styles;
+
+.link:link,
+.link:visited {
+  color: styles.$color-grey-dark-2;
+}
