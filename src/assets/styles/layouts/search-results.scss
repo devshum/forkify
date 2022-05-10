@@ -1,0 +1,44 @@
+@use '../abstracts/variables' as styles;
+
+.search-results {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+
+  &__results {
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+
+  &__pagination {
+    margin-top: auto;
+    padding: 0 3.5rem;
+  
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  
+    &__btn {
+      &--prev {
+        float: left;
+      }
+      &--next {
+        float: right;
+      }
+    }
+  }
+
+  &__copyright {
+    color: styles.$color-grey-dark-2;
+    font-size: 1.2rem;
+    padding: 0 3.5rem;
+    margin-top: 4rem;
+  
+    .twitter-link:link,
+    .twitter-link:visited {
+      color: styles.$color-grey-dark-2;
+    }
+  }
+}

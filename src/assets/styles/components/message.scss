@@ -1,0 +1,11 @@
+@use '../abstracts/variables' as styles;
+
+.message,
+.error {
+  svg {
+    height: 3rem;
+    width: 3rem;
+    fill: styles.$color-primary;
+    transform: translateY(-0.3rem);
+  }
+}

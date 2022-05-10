@@ -1,0 +1,26 @@
+@use 'variables' as styles;
+
+.btn {
+  background-image: styles.$gradient;
+  border-radius: 10rem;
+  font-family: inherit;
+  border: none;
+  text-transform: uppercase;
+  color: styles.$white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  & > *:first-child {
+    margin-right: 1rem;
+  }
+}

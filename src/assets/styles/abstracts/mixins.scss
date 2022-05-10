@@ -1,0 +1,11 @@
+@use '../abstracts/variables' as styles;
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == medium {
+    @media only screen and (max-width: styles.$bp-medium) { @content }
+  };
+
+  @if $breakpoint == large {
+    @media only screen and (max-width: styles.$bp-large) { @content }
+  };
+}

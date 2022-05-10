@@ -1,0 +1,44 @@
+@use '../../../../assets/styles/abstracts/variables' as styles;
+
+:host {
+  display: block;
+}
+
+.search {
+  background-color: styles.$white;
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+  transition: all 0.3s;
+
+  &:focus-within {
+    transform: translateY(-2px);
+    box-shadow: 0 0.7rem 3rem rgba(styles.$color-grey-dark-1, 0.08);
+  }
+
+  &__field {
+    border: none;
+    background: none;
+    font-family: inherit;
+    color: inherit;
+    font-size: 1.7rem;
+    width: 30rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: styles.$color-grey-light-3;
+    }
+
+    @media only screen and (max-width: styles.$bp-medium) {
+      width: auto;
+
+      &::placeholder {
+        color: styles.$white;
+      }
+    }
+  }
+}
